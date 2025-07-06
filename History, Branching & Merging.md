@@ -7,6 +7,8 @@ This module covers some of Git’s most powerful features, essential for any dev
 
 ## 🧠 Lesson 10: Viewing Git History
 
+One of Git's superpowers is tracking your projects history.
+
 Understanding Git history is crucial for debugging and collaboration. Whether you’re identifying why a pipeline failed or who last edited a configuration file, Git's history tools help trace everything.
 
 ### 🔧 Key Commands:
