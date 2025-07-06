@@ -51,6 +51,10 @@ Many beginners confuse Git with GitHub — but they are not the same.
 - **Think of Git** as your personal notebook — it stores your work privately.
 - **Think of GitHub** as a shared whiteboard — it allows your team to collaborate publicly or within an organisation.
 
+<img src="https://github.com/user-attachments/assets/e513136d-b899-45b2-8908-5faf23d845c4" width="400"/>
+
+&nbsp;
+
 > Git is the foundation; platforms like GitHub build collaboration and automation features on top of it.
 
 ---
