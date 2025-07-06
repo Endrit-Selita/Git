@@ -51,6 +51,12 @@ These Git commands help you undo or manage commit history. Each serves a differe
 - Copies a **specific commit** from one branch to another.
 - Useful for hotfixes without merging the entire branch.
 
+&nbsp;
+
+<img src="https://github.com/user-attachments/assets/2504cc0b-ce3b-4f3e-ac08-c8c7ac418974" width="400"/>
+
+&nbsp;
+
 ---
 
 ## 🔁 Lesson 19: Forks & Pull Requests
@@ -76,18 +82,24 @@ Used in both open-source and enterprise GitHub workflows to safely propose and m
 4. Push to your fork.
 5. Open a PR to the original project.
 
+&nbsp;
+
+<img src="https://github.com/user-attachments/assets/e06b6cfb-ccb7-480a-841c-dd044572ca3c" width="400"/>
+
+&nbsp;
+
 ---
 
 ## 🤝 Lesson 20: Collaboration Best Practices
 
 Git becomes truly powerful when used in teams. Here are some best practices:
 
-- ✅ **Use feature branches** (e.g. `feature/login-page`) to keep `main` stable.
-- ✅ **Push your branch** to remote and open a PR for review.
-- ✅ **Assign reviewers** and use inline comments for clarity.
-- ✅ **Fix merge conflicts** yourself — don’t leave it to others.
-- ✅ Use GitHub tools like **Issues**, **Projects**, and **Discussions** for planning and collaboration.
-- ✅ **Write clean, meaningful commit messages**  
+- **Use branches to isolate work** to keep `main` stable.
+- **Push your branch** to remote and open a PR for review.
+- **Assign reviewers** and use GitHub's UI for comments
+- **Fix merge conflicts** yourself. don’t leave it to others.
+- Use GitHub tools like **Issues**, **Projects**, and **Discussions** for planning and collaboration.
+- **Write clean, meaningful commit messages**  
   Avoid vague messages like “fixed stuff”.
 
 > These practices improve visibility, maintain code quality, and keep teams aligned.
@@ -98,13 +110,19 @@ Git becomes truly powerful when used in teams. Here are some best practices:
 
 The standard day-to-day workflow for most Git-based teams:
 
-1. **Start fresh:** Pull the latest from `main` or clone the repo.
+1. **Start fresh:** Pull the latest from `main` or clone the repo (start with the latest code, you don't want to work on something outdated)
 2. **Create a new branch** for your work.
 3. **Make changes locally.**
 4. **Push your branch** to GitHub.
-5. **Open a Pull Request** for code review.
+5. **Open a Pull/Merge Request** for code review.
 6. **Review and merge.**
 7. **Pull regularly** to stay up to date and avoid conflicts.
+
+&nbsp;
+
+<img src="https://github.com/user-attachments/assets/2b06f408-799e-4e72-814a-3b9757cee86b" width="400"/>
+
+&nbsp;
 
 > 📌 This workflow keeps development structured, clean, and collaborative.
 
@@ -112,13 +130,41 @@ The standard day-to-day workflow for most Git-based teams:
 
 ## 🌲 Lesson 22: Trunk-Based Development
 
-A modern workflow used in fast-paced teams like Google and Meta.
+Trunk-based development is a software development approach where all developers work directly on the main branch (often called "trunk") or use very short-lived branches.
 
-- Everyone works on `main` or very short-lived branches.
-- Branches are merged **quickly** (within hours or a day).
-- Requires:
-  - 🔁 Strong CI/CD pipelines (automated testing)
-  - ✅ Good test coverage and code quality checks
+Short-lived branches are merged back into the main branch quickly, sometimes within a day or even a few hours.
+
+### Key Practices
+
+**Short Branches:**
+Developers avoid long-running feature branches. Instead, they create small branches for quick changes and merge them back rapidly.
+
+**Strong CI Pipelines:**
+Every commit is automatically tested using continuous integration (CI) tools. This ensures that new code does not break the build.
+
+**Code Quality Checks:**
+Automated checks and reviews are in place so that only high-quality, working code is merged into the main branch.
+
+### Benefits
+**Faster Delivery:**
+Enables teams to ship code more frequently and respond quickly to changes.
+
+**High Code Quality:**
+Automated testing and code checks help maintain a stable and reliable codebase.
+
+**Adopted by Leading Tech Companies:**
+Companies like Google and Meta (Facebook) use trunk-based development to move fast without sacrificing stability.
+
+### Requirements
+
+**Solid Test Coverage:**
+Reliable automated tests are essential to catch issues early.
+
+**Good Engineering Habits:**
+Developers must follow best practices to ensure code quality and smooth collaboration.
+
+&nbsp;
+
 
 > Ideal for rapid delivery environments. Encourages discipline and fast feedback.
 
