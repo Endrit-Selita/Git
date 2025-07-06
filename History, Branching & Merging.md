@@ -11,7 +11,7 @@ One of Git's superpowers is tracking your projects history.
 
 Understanding Git history is crucial for debugging and collaboration. Whether you’re identifying why a pipeline failed or who last edited a configuration file, Git's history tools help trace everything.
 
-### 🔧 Key Commands:
+### Key Commands:
 - `git log`  
   Shows the full commit history. Useful for reviewing recent changes.
 
@@ -41,6 +41,8 @@ Understanding Git history is crucial for debugging and collaboration. Whether yo
 
 Many beginners confuse Git with GitHub — but they are not the same.
 
+They work together, but they are not the same thing. Git is the actual version control tool to make those changes that runs on your machine and you can work on Git without touching the internet (you can make commits, branch off etc all offline). Where as GitHub is a platform cloud service that hosts repos online so you can collaborate with others (pull reuquest, review code etc).
+
 | Git                             | GitHub (or GitLab, Bitbucket, etc.)               |
 |----------------------------------|---------------------------------------------------|
 | A version control tool           | A cloud-based platform                            |
@@ -61,11 +63,11 @@ Many beginners confuse Git with GitHub — but they are not the same.
 
 ## 🌱 Lesson 12: Branching 101
 
-Branching is one of Git’s core strengths, allowing you to work on features or bug fixes without affecting the main codebase.
+Branching is one of Git’s core strengths, allowing you to work on features or bug fixes without affecting the main codebase or main branch.
 
-### 🔧 Key Commands:
+### Key Commands:
 - `git branch`  
-  Lists all branches. Does **not** switch branches.
+  Lists or cretaes branches. Does **not** switch branches.
 
 - `git switch -c <branch>`  
   Creates and switches to a new branch. A modern, beginner-friendly command.
@@ -77,7 +79,7 @@ Branching is one of Git’s core strengths, allowing you to work on features or 
   Older way to create and switch branches. Still works, just more verbose.
 
 - `git branch -d <branch>`  
-  Deletes a branch (if merged).
+  Deletes a branch.
 
 > 💡 `git switch` is recommended for beginners as it's more readable and explicit.
 
@@ -87,7 +89,13 @@ Branching is one of Git’s core strengths, allowing you to work on features or 
 
 Merging combines work from one branch into another — commonly into `main`, `dev`, or `master`.
 
-### 🔧 Key Command:
+&nbsp;
+
+<img src="https://github.com/user-attachments/assets/e23875b9-8766-4b80-937f-2c6704e1edaf" width="400"/>
+
+&nbsp;
+
+### Key Command:
 - `git merge <branch>`  
   Merges another branch into your current one.
 
@@ -101,6 +109,8 @@ Merging combines work from one branch into another — commonly into `main`, `de
 ### ⚠️ Merge Conflicts:
 If the same file was changed on both sides, Git may not know how to combine them. You’ll need to manually resolve the conflict.
 
+
+
 > Merging is how collaboration happens in Git. It’s central to all team workflows.
 
 ---
@@ -109,7 +119,7 @@ If the same file was changed on both sides, Git may not know how to combine them
 
 To understand what’s going on under the hood, Git provides ways to visualise history, merges, and branching.
 
-### 🔧 Recommended Commands:
+### Recommended Commands:
 - `git log --oneline`  
   A compact view of commit history.
 
@@ -139,12 +149,12 @@ This is an advanced topic but valuable when cleaning up your Git history.
 > ✅ Use **Rebase** to clean your personal branch history before pushing  
 > ❌ Do **not** rebase shared branches — it rewrites history and can cause conflicts
 
+<img src="https://github.com/user-attachments/assets/03c1bb15-dec9-4d6b-86e9-2f338a6f0fb1" width="400"/>
+
+&nbsp;
+
 ---
 
 ## Final Thoughts
 
 Understanding how to navigate Git’s history, create and manage branches, and collaborate through merging or rebasing is key to becoming confident in version control. These tools are used every day in DevOps to manage codebases, infrastructure definitions, and CI/CD automation.
-
----
-
-🛠 *Repository maintained as part of my DevOps learning journey. Notes based on real course transcripts and personal practice.*
