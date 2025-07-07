@@ -4,31 +4,31 @@ This chapter covers real-world advice to help keep your Git history clean, avoid
 
 ---
 
-### ✅ Lesson 23: Commit Hygiene & Best Practices
+### Lesson 23: Commit Hygiene & Best Practices
 
-Write clear, structured commit messages and keep your Git history clean.
+Write clear, structured commit messages and keep your Git history clean. Your messages should be telling a story.
 
-#### 🔹 Good Commit Messages
+#### Good Commit Messages
 - Use clear, descriptive messages:
   - ✅ `Fix navbar logo alignment`
   - ✅ `Add user middleware`
   - ❌ `final update`, `stuff`, `fix again`
 - Your commit message should explain **what** was changed and **why**.
 
-#### 🔹 Squash Before Merge
-- Avoid merging PRs with messy, multiple WIP commits like:
+#### Squash Before Merge
+- Avoid merging PRs with messy, multiple work in progress commits like:
   - `fix typo`
   - `broken test again`
-  - `final-final`
+
 - Squash them into a single, meaningful commit before merging to `main`.
 
-#### 🔹 One Logical Change per Commit
+#### One Logical Change per Commit
 - Keep changes focused:
   - ✅ One commit for bug fix
   - ✅ One commit for documentation update
 - Easier to track, rollback, and debug issues later.
 
-#### 🔹 Avoid Noisy History
+#### Avoid Noisy History
 - Don’t fill your commit log with messages like `merge main into main`, `final_final_really_final`.
 - Take a moment to write meaningful messages – it makes collaboration easier long-term.
 
@@ -38,40 +38,42 @@ Write clear, structured commit messages and keep your Git history clean.
 
 Catch mistakes early and keep code clean using automation.
 
-#### 🔹 What Are Pre-Commit Hooks?
+#### What Are Pre-Commit Hooks?
 - Tools that run checks **before** a commit is made.
 - Helps catch:
   - Syntax errors
   - Bad formatting
   - Secrets and sensitive data
 
-#### 🔹 Common Tools
+#### Common Tools
 | Tool        | Use Case            |
 |-------------|---------------------|
 | `pre-commit` | General pre-commit automation |
 | `Husky`      | Node/JavaScript projects      |
 | `tflint`, `tfsec` | Terraform security and formatting  |
 
-#### 🔹 Benefits
+#### Benefits
 - Prevents broken or insecure code from being committed
 - Saves time in code review and debugging
 - Promotes consistent standards across the team
 
-#### 🔹 Run in CI/CD Pipelines Too
+#### Run in CI/CD Pipelines Too
 - These tools also run in CI (e.g., GitHub Actions)
 - Ensures code is scanned and safe before deploying
 
 ---
 
-### ⚠️ Lesson 25: Common Mistakes in the Real World
+### Lesson 25: Common Mistakes in the Real World
 
-Even experienced developers make mistakes. Avoid these common pitfalls:
+Even experienced developers make mistakes. Avoid these common errors:
 
 #### ❌ Forgetting to Pull Before Push
 
-- Always `git pull` first to avoid conflicts:
+Always `git pull` first to avoid conflicts.
+
+- Why? Someone rlse pushed before you and you alway pull to make sure you are in syn before pushing.
   
-  `git pull --rebase`
+Do `git pull --rebase` before you start work to keep things clean.
 
 #### ❌ Force Pushing to Shared Branches
 
@@ -98,6 +100,10 @@ Prevent committing:
 `.DS_Store (MacOS)`
 
 - Keeps your repo clean and secure
+
+  <img src="https://github.com/user-attachments/assets/64a23d44-d29b-42c5-bf81-f28829039036" width="400">
+
+
 
 ---
 
