@@ -71,7 +71,7 @@ Even experienced developers make mistakes. Avoid these common errors:
 
 Always `git pull` first to avoid conflicts.
 
-- Why? Someone rlse pushed before you and you alway pull to make sure you are in syn before pushing.
+- Why? Someone else pushed before you and you alway pull to make sure you are in syn before pushing.
   
 Do `git pull --rebase` before you start work to keep things clean.
 
@@ -95,38 +95,40 @@ Prevent committing:
 
 `node_modules`
 
-`.env files`
+`.env files` (secrets)
 
 `.DS_Store (MacOS)`
 
-- Keeps your repo clean and secure
+- Add these to your git ignore and this keeps your repo clean and secure
+
+&nbsp;
 
   <img src="https://github.com/user-attachments/assets/64a23d44-d29b-42c5-bf81-f28829039036" width="400">
 
-
+&nbsp;
 
 ---
 
-### 🧱 Lesson 26: Git at Scale
+### Lesson 26: Git at Scale
 
 In large organisations, Git is used differently. Here’s how big teams manage it:
 
-#### 🔹 Monorepos
+#### Monorepos
 
 - Everything in one big repo (used by Google, Meta, Uber)
 
 - Simplifies dependencies but requires smarter tooling
 
-#### 🔹 Build Tools for Scale
+#### Build Tools for Scale
 
 | Tool                   | Purpose                                |
 |------------------------|----------------------------------------|
 | `turbo`, `nx`, `bazel` | Builds only affected parts of the repo |
-| `sparse-checkout`      | Clones only specific folders           |
-| `git-lfs`              | Manages large media files              |
+| `sparse-checkout`      | Clones only sub folders you are wokring on           |
+| `git-lfs`              | Manages large media files by replacing bug files with pointers that fetches the actual content separately           |
 
 
-#### 🔹 Cleaning and Refactoring
+#### Cleaning and Refactoring
 
 - Use git-filter-repo or BFG to:
 
@@ -134,19 +136,25 @@ In large organisations, Git is used differently. Here’s how big teams manage i
 
 - Delete folders from commit history
 
-#### 🔹 Submodules vs Subtrees
+#### Submodules vs Subtrees
 
 - Submodules: Fragile, but useful for microservices
 
 - Subtrees: More stable and Git-native
 
-#### 🔹 Security and Automation at Scale
+#### Security and Automation at Scale
 
 - Use bots and hooks to enforce standards
 
 - Security tools scan for issues automatically
 
 - Even infrastructure (e.g., Kubernetes configs) is now managed via Git (`ArgoCD`, `Flux`)
+
+&nbsp;
+
+<img src="https://github.com/user-attachments/assets/9c386b16-40ff-43e8-923a-1a112ea6a1e6" width="300">
+
+&nbsp;
 
 ---
 
@@ -165,7 +173,7 @@ Tool	Purpose
 | `trufflehog`  | Scans for sensitive data leaks   |
 
 
-#### ❗ If You Leak a Secret
+#### If You Leak a Secret
 
 - Revoke it immediately (e.g., AWS key)
 
@@ -175,7 +183,7 @@ Tool	Purpose
 
 `git filter-repo` or `BFG Repo Cleaner`
 
-#### 🔎 Monitor Your Logs
+#### Audit Your Logs
 
 - Regularly check git log
 
