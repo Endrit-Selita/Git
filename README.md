@@ -20,7 +20,7 @@ Work with remote repositories on platforms like GitHub. Clone, push, pull, and c
 5. 🧠 [Git Best Practices](https://github.com/Endrit-Selita/Git/blob/main/Git%20Best%20Practices.md)
 Lean the best practices when using Git in real life jobs and scenarios
 
-6. 🧪 [Hands-On Git & GitHub]()
+6. 🧪 [Hands-On Git & GitHub](https://github.com/Endrit-Selita/Git/blob/main/Hands-On%20Git%20%26%20GitHub.md)
 Apply everything you’ve learned through real-world practice: local repos, branches, commits, remotes, and more.
 
 ---
