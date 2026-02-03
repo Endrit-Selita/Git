@@ -9,7 +9,7 @@ A beginner friendly guide to mastering Git & GitHub theory, concepts, and hands-
 Learn what Git is, why it’s essential for collaboration, and how it changed software development through distributed version control.
 
 2. [Git Internals & Core Concepts](https://github.com/Endrit-Selita/Git/blob/main/Git%20Internals%20%26%20Core%20Concepts.md)
-Understand how Git works under the hood — from commits and branches to blobs, trees, and the `.git` directory.
+Understand how Git works under the hood, from commits and branches to blobs, trees, and the `.git` directory.
 
 3. [History, Branching & Merging](https://github.com/Endrit-Selita/Git/blob/main/History%2C%20Branching%20%26%20Merging.md)
 Create, switch, and merge branches. Learn to resolve conflicts and understand the difference between merge and rebase.
