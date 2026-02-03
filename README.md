@@ -25,9 +25,7 @@ Apply everything you’ve learned through real-world practice: local repos, bran
 
 ---
 
-## 🧰 Tools & Resources
-
-- [Git Documentation](https://git-scm.com/doc)
+## Resources
 - [GitHub Docs](https://docs.github.com/)
 - [Pro Git Book (free)](https://git-scm.com/book/en/v2)
-- Recommended tools: GitKraken, GitHub Desktop, VS Code Git extension
+- Recommended tools: VS Code Git extension
