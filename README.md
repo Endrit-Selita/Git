@@ -1,6 +1,6 @@
 ### 🚀 Git Fundamentals
 
-A beginner friendly guide to mastering Git & GitHub theory, concepts, and hands-on practice. Ideal for DevOps, developers, and anyone working with code, IT or infrastructure.
+Beginner friendly notes on Git & GitHub theory, concepts, and hands-on practice.
 
 
 ---
